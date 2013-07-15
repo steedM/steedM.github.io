@@ -1,2 +1,1 @@
-steedM.github.io
-================
+Mixture + Sassaparilla is a fast way to start your responsive web design projects that harnesses the power of SASS and Compass.
