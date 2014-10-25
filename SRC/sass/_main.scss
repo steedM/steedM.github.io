@@ -1,0 +1,18 @@
+// Grid
+header article {
+    @include outer-container;
+    @include border-top-radius(5px);
+
+    h1 {
+        @include span-columns(8);
+    }
+    nav {
+        @include span-columns(4);
+    }
+}
+
+.row {
+    @include outer-container;
+}
+.span4 {@include span-columns(4);}
+.span8 {@include span-columns(8);}

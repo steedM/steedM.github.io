@@ -1,0 +1,359 @@
+/*  Modele : www.sentoinc.com  */
+body {
+  background: #fff;
+  font-family: Arial;
+  margin: 0
+}
+
+article {
+  /*width: 960px;*/
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+h1 {
+  color: #656565;
+  font-family: "OpenSansLight";
+  font-size: 5em;
+}
+
+header[role="banner"] h1 {
+  color: #656565;
+  font-size: 2em;
+  line-height: 1.16667em;
+  margin-bottom: 0;
+}
+
+h1 b {
+  font-family: "OpenSansRegular";
+}
+
+h2 {
+  color: $mainColor;
+  font-family: "OpenSansLight";
+  font-size: 3em;
+  text-transform: uppercase;
+  text-align: center;
+}
+h2 span {
+  /*@include border;*/
+  padding: 0.5em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+p {
+  color: #656565;
+  font-family: "OpenSansLight";
+}
+
+a {
+  color: $mainColor;
+}
+
+/* Header */
+header[role="banner"] {
+  background: white;
+}
+
+header a {
+  color: $mainColor;
+  font-size: 2em;
+  padding: 0 10px;
+  text-decoration: none;
+  transition: all 1s ease-in-out;
+  webkit-transition: all 1s ease-in-out;
+}
+
+header nav {
+  float: right;
+}
+
+header nav li {
+  display: inline-block;
+}
+
+header a:hover {
+  color: #656565;
+  -webkit-transform: rotate(60deg);
+}
+
+header a:hover i {
+  -webkit-transform: rotate(70deg);
+  transform: rotate(70deg);
+}
+
+/* top bar */
+.top-bar {
+  background: #fff;
+}
+
+.top-bar section {
+  max-width: 62.5em;
+}
+
+.top-bar-section ul {
+  background: #fff;
+}
+
+.top-bar-section ul li > a {
+  color: $mainColor;
+  background: #fff;
+}
+
+/* Section */
+.hero {
+  margin-bottom: 0;
+}
+
+#about {
+  background: url(../img/ordi.jpg) 50% 0 repeat fixed;
+  min-height: 300px;
+  background-size: cover;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  /*-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
+}
+#about article {
+  text-align: left;
+}
+#about li {
+  color: #fff;
+  padding: 0.5em;
+}
+
+#home {
+  background: url(../img/sublime.jpg) 50% 0 repeat fixed;
+  background: url(../img/banniere.png) 50% 0 repeat fixed;
+  min-height: 300px;
+  background-size: 50%;
+  height: 300px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+}
+#home article {
+  height: 200px;
+  top: 150px;
+}
+
+#exp {
+  background: url(../img/bg1.jpg) 50% 0 repeat fixed;
+  min-height: 300px;
+  background-size: cover;
+  height: 300px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  /*-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
+}
+#exp article {
+  height: 200px;
+  text-align: center;
+  top: 150px;
+  color: #fff;
+}
+#exp i {
+  color: #fff;
+}
+
+#divers {
+  background: url(../img/banniere.png) 50% 0 repeat-x fixed;
+  min-height: 150px;
+  height: 150px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  /*-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
+}
+#divers article {
+  height: 200px;
+  text-align: center;
+  top: 150px;
+}
+
+.page h2, .page p {
+  color: #fff;
+  text-align: left;
+}
+
+#avatar {
+  display: block;
+  float: left;
+  background-size: 280px;
+  width: 200px;
+  height: 200px;
+  background-image: url(../img/lomo.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-radius: 100px;
+  margin-bottom: 20px;
+}
+
+/* Liste icone */
+.big_icons {
+  text-align: center;
+}
+.big_icons li {
+  cursor: pointer;
+}
+.big_icons li span {
+  /*background: $vert;*/
+  background: #f1f1f2;
+  /*color: $vert; */
+  /*padding-bottom:33%;padding-top:33%; */
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+}
+.big_icons p {
+  clear: both;
+  display: block;
+  margin-top: 20px;
+}
+.big_icons span:hover i {
+  color: $mainColor;
+}
+.big_icons i {
+  width: 33%;
+  height: 33%;
+  font-size: 4em;
+  text-align: center;
+  color: #b5b5b5;
+  transition: all 1s;
+}
+
+.big_icons li:nth-child(2) span {
+  /*background: $rouge;*/
+  color: $mainColor;
+}
+
+.big_icons li:nth-child(3) span {
+  /*background: $bleu;*/
+  color: $mainColor;
+}
+
+li.plus span {
+  background: none;
+  font-size: 4em;
+  padding: 0;
+  line-height: 2em;
+}
+li.plus span:hover {
+  background: none;
+}
+
+ul li ul li {
+  text-align: left;
+  list-style: square;
+  padding: 5px;
+}
+
+.center {
+  text-align: center;
+}
+
+.superbig {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  display: block;
+  background: $mainColor;
+  border-radius: 100px;
+}
+
+.square {
+  padding: 0;
+}
+.square li {
+  padding: 5px 0;
+  line-height: 1.3em;
+  display: block;
+}
+.square li span {
+  font-size: 1.2em;
+  color: #656565;
+}
+.square li .points {
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+.lighter {
+  background: #f1f1f2;
+}
+
+/* Buttons */
+.button {
+  border-radius: 4px 4px 4px;
+  box-shadow: 0 8px #106949;
+}
+
+.button:hover {
+  top: 2px;
+  box-shadow: 0 6px #106949;
+}
+
+@media only screen and (max-width: 768px) {
+  #btn_CV {
+    margin: 65px 0 0 30px;
+  }
+
+  #home {
+    background-size: 100%;
+  }
+
+  #title {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  #social {
+    position: relative;
+    width: 100%;
+  }
+
+  #social ul {
+    text-align: center;
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  #social li {
+    display: inline-block;
+  }
+
+  #social li a, #social li a i {
+    font-size: 1.2em;
+  }
+}
+@media only screen and (max-width: 470px) {
+  #avatar {
+    margin: 0 auto;
+    float: none;
+  }
+
+  #btn_CV {
+    margin: 10px auto;
+    display: block;
+    width: 70%;
+  }
+}

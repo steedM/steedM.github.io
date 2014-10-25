@@ -1,0 +1,38 @@
+{
+  "author": "JS Peru",
+  "name": "Front-End-Starterkit",
+  "version": "0.0.1",
+  "description": "Starterkit",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/steedM/steedM.github.io.git"
+  },
+  "devDependencies": {
+    "critical": "^0.4.0",
+    "gulp": "^3.8.2",
+    "gulp-concat": "^2.4.0",
+    "gulp-connect": "^2.0.5",
+    "gulp-iconfont": "^0.2.1",
+    "gulp-iconfont-css": "0.0.9",
+    "gulp-plumber": "^0.6.3",
+    "gulp-prettify": "^0.1.2",
+    "gulp-sass": "~0.7.0",
+    "gulp-uglify": "^1.0.1",
+    "gulp-util": "~2.2.14",
+    "gulp-watch": "~0.5.0",
+    "node-bourbon": "^1.2.3",
+    "node-neat": "^1.3.0"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "jquery": "^1.9.x"
+  },
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC"
+}
