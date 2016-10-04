@@ -1,5 +1,7 @@
 @import "base/variables";
+@import "base/typo";
 @import "vendor/foundation";
+@import "components/buttons";
 
 body {
   background: #fff;
@@ -10,102 +12,47 @@ article {
   padding: 30px 0;
 }
 
-h1 {
-  color: $primary;
-  font-family: "OpenSansLight";
-  font-size: 5em;
-}
-
-header[role="banner"] h1 {
-  color: $primary;
-  font-size: 2em;
-  line-height: 1.16667em;
-  margin-bottom: 0;
-}
-
-h1 b {
-  font-family: "OpenSansRegular";
-}
-
-h2 {
-  color: $secondary;
-  font-family: "OpenSansLight";
-  font-size: 3em;
-  text-transform: uppercase;
-  text-align: center;
-}
-h2 span {
-  padding: 0.5em;
-}
-
-h3 {
-  font-size: 1.5em;
-}
-
-p {
-  color: $primary;
-  font-family: "OpenSansLight";
-}
-
-a {
-  color: $secondary;
-}
-
 /* Header */
+
 header[role="banner"] {
   background: white;
-}
+  h1 {
+    color: $primary;
+    font-size: 2em;
+    line-height: 1.16667em;
+    margin: 1rem 0;
+  }
 
-header a {
-  color: $secondary;
-  font-size: 2em;
-  padding: 0 10px;
-  text-decoration: none;
-  transition: all 1s ease-in-out;
-  webkit-transition: all 1s ease-in-out;
-}
+  ul {
+    margin: 1rem 0;
+  }
+  a {
+    color: $secondary;
+    font-size: 2em;
+    padding: 0 10px;
+    text-decoration: none;
+    transition: all 1s ease-in-out;
+  }
 
-header nav {
-  float: right;
-}
+  nav {
+    float: right;
+    li {
+      display: inline-block;
+    }
 
-header nav li {
-  display: inline-block;
-}
+    a:hover {
+      color: $primary;
+      -webkit-transform: rotate(60deg);
 
-header a:hover {
-  color: $primary;
-  -webkit-transform: rotate(60deg);
-}
-
-header a:hover i {
-  -webkit-transform: rotate(70deg);
-  transform: rotate(70deg);
-}
-
-/* top bar */
-.top-bar {
-  background: #fff;
-}
-
-.top-bar section {
-  max-width: 62.5em;
-}
-
-.top-bar-section ul {
-  background: #fff;
-}
-
-.top-bar-section ul li > a {
-  color: $secondary;
-  background: #fff;
+      i {
+        -webkit-transform: rotate(70deg);
+        transform: rotate(70deg);
+      }
+    }
+  }
 }
 
 /* Section */
-.hero {
-  margin-bottom: 0;
-}
-
 #about {
   background: url(../img/ordi.jpg) 50% 0 repeat fixed;
   min-height: 300px;
@@ -115,13 +62,20 @@ header a:hover i {
   width: 100%;
   max-width: 1920px;
   position: relative;
-}
-#about article {
-  text-align: left;
-}
-#about li {
-  color: #fff;
-  padding: 0.5em;
+
+  article {
+    text-align: left;
+  }
+
+  li {
+    color: #fff;
+    padding: 0.5em;
+  }
+
+  h2 {
+    text-align: left;
+    color: #fff;
+  }
 }
 
 #home {
@@ -134,30 +88,32 @@ header a:hover i {
   width: 100%;
   max-width: 1920px;
   position: relative;
-}
-#home article {
-  height: 200px;
-  top: 150px;
+
+  article {
+    height: 200px;
+    top: 150px;
+  }
 }
 
 #exp {
-  background: url(../img/bg1.jpg) 50% 0 repeat fixed;
+  background: url(../img/bg1.jpg) 50% 0 no-repeat fixed;
   min-height: 300px;
-  background-size: cover;
   height: 300px;
   margin: 0 auto;
   width: 100%;
   max-width: 1920px;
   position: relative;
-}
-#exp article {
-  height: 200px;
-  text-align: center;
-  top: 150px;
   color: #fff;
-}
-#exp i {
-  color: #fff;
+  article {
+    height: 200px;
+    text-align: center;
+    top: 150px;
+    color: #fff;
+  }
+
+  i, h2 {
+     color: #fff;
+   }
 }
 
 #divers {
@@ -168,17 +124,14 @@ header a:hover i {
   width: 100%;
   max-width: 1920px;
   position: relative;
-}
-#divers article {
-  height: 200px;
-  text-align: center;
-  top: 150px;
+
+  article {
+    height: 200px;
+    text-align: center;
+    top: 150px;
+  }
 }
 
-.page h2, .page p {
-  color: #fff;
-  text-align: left;
-}
 
 #avatar {
   display: block;
@@ -196,36 +149,34 @@ header a:hover i {
 /* Liste icone */
 .big_icons {
   text-align: center;
-}
-.big_icons li {
-  cursor: pointer;
-}
 
-.big_icons p {
-  clear: both;
-  display: block;
-  margin-top: 20px;
-}
-.big_icons span:hover i {
-  color: $secondary;
-}
-.big_icons i {
-  width: 33%;
-  height: 33%;
-  font-size: 4em;
-  text-align: center;
-  color: #b5b5b5;
-  transition: all 1s;
-}
+  li {
+    cursor: pointer;
+  }
 
-.big_icons li:nth-child(2) span {
-  /*background: $rouge;*/
-  color: $secondary;
-}
+  p {
+    clear: both;
+    display: block;
+    margin-top: 20px;
+  }
 
-.big_icons li:nth-child(3) span {
-  /*background: $bleu;*/
-  color: $secondary;
+  i {
+    width: 33%;
+    height: 33%;
+    font-size: 4em;
+    text-align: center;
+    color: #b5b5b5;
+    transition: all 1s;
+  }
+
+  li:nth-child(2) span {
+    color: $secondary;
+  }
+
+  li:nth-child(3) span {
+    color: $secondary;
+  }
+
 }
 
 li.plus span {
@@ -233,9 +184,10 @@ li.plus span {
   font-size: 4em;
   padding: 0;
   line-height: 2em;
-}
-li.plus span:hover {
-  background: none;
+
+  &:hover {
+    background: none;
+  }
 }
 
 ul li ul li {
@@ -281,17 +233,6 @@ ul li ul li {
 
 .lighter {
   background: #f1f1f2;
-}
-
-/* Buttons */
-.button {
-  border-radius: 4px 4px 4px;
-  box-shadow: 0 8px #106949;
-}
-
-.button:hover {
-  top: 2px;
-  box-shadow: 0 6px #106949;
 }
 
 @media only screen and (max-width: 768px) {
