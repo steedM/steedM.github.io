@@ -14,15 +14,15 @@ button,.button{
   color:#fff;
   -webkit-appearance:none;
   border-radius: 4px 4px 4px;
-  box-shadow: 0 8px #106949;
+  box-shadow: 0 8px darken($secondary, 10%);
   transition:background-color 300ms ease-out;
 
   &:hover {
     top: 2px;
-    box-shadow: 0 6px #106949;
+    box-shadow: 0 6px darken($secondary, 10%);
   }
   &:focus, &:hover {
-    background-color:#1b8760;
+    background-color:darken($secondary, 10%);
     color:#fff
   }
 

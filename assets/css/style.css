@@ -578,11 +578,11 @@ button, .button {
   color: #fff;
   -webkit-appearance: none;
   border-radius: 4px 4px 4px;
-  box-shadow: 0 8px #106949;
+  box-shadow: 0 8px #1b8760;
   transition: background-color 300ms ease-out; }
   button:hover, .button:hover {
     top: 2px;
-    box-shadow: 0 6px #106949; }
+    box-shadow: 0 6px #1b8760; }
   button:focus, button:hover, .button:focus, .button:hover {
     background-color: #1b8760;
     color: #fff; }
