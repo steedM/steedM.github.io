@@ -52,6 +52,14 @@ header[role="banner"] {
   }
 }
 
+#about, #exp, #home {
+  filter: grayscale(10%);
+
+  &:hover {
+    filter: grayscale(40%);
+  }
+}
+
 /* Section */
 #about {
   background: url(../img/sublime.JPG) 50% 0 repeat fixed;
@@ -79,7 +87,6 @@ header[role="banner"] {
 }
 
 #home {
-  background: url(../img/sublime.jpg) 50% 0 repeat fixed;
   background: url(../img/banniere.png) 50% 0 repeat fixed;
   min-height: 300px;
   background-size: 50%;
@@ -104,7 +111,7 @@ header[role="banner"] {
   max-width: 1920px;
   position: relative;
   color: #fff;
-  
+
   article {
     height: 200px;
     text-align: center;

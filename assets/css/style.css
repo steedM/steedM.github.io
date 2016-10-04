@@ -646,6 +646,13 @@ header[role="banner"] {
       header[role="banner"] nav a:hover i {
         transform: rotate(70deg); }
 
+#about, #exp, #home {
+  -webkit-filter: grayscale(10%);
+          filter: grayscale(10%); }
+  #about:hover, #exp:hover, #home:hover {
+    -webkit-filter: grayscale(40%);
+            filter: grayscale(40%); }
+
 /* Section */
 #about {
   background: url(../img/sublime.JPG) 50% 0 repeat fixed;
@@ -666,7 +673,6 @@ header[role="banner"] {
     color: #fff; }
 
 #home {
-  background: url(../img/sublime.jpg) 50% 0 repeat fixed;
   background: url(../img/banniere.png) 50% 0 repeat fixed;
   min-height: 300px;
   background-size: 50%;
