@@ -1,0 +1,54 @@
+
+.hero-photo {
+    text-align: center;
+    flex-basis: 33%;
+    @include media(">=tablet") {
+        display: flex;
+        flex-direction : column  
+    }
+}
+
+.hero-resume {
+    flex-basis: 66%;
+}
+
+#avatar {
+  display: block;
+  margin: 0 auto 20px;
+  background-size: 280px;
+  width: 200px;
+  height: 200px;
+  background-image: url(../img/lomo.jpg);
+  background-repeat: no-repeat;
+  background-position: 75% 50%;
+  border-radius: 50%;
+}
+
+#about {
+  background: url(../img/sublime.JPG) 50% 0 repeat fixed;
+  min-height: 300px;
+  background-size: cover;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+
+  article {
+    text-align: left;
+  }
+
+  li {
+    color: #fff;
+    padding: 0.5em;
+  }
+
+  h2 {
+    text-align: left;
+    color: #fff;
+  }
+
+   @include media( "<=tablet") {
+      background: $primary ;
+   }
+}

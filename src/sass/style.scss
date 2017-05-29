@@ -1,10 +1,38 @@
 @import "base/variables";
+@import "base/mq";
 @import "base/typo";
-@import "vendor/foundation";
 @import "components/buttons";
+@import "components/header";
+@import "components/hero";
 
 body {
   background: #fff;
+  font-family: "OpenSansRegular";
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  max-width: 62.5em;
+  margin: 0 auto;
+  width: 100%;
+  display : flex;
+  flex-wrap : wrap;
+  justify-content: center;
+  h2 {
+    flex-basis: 100%;
+    flex : 0 0 100%
+  }
+}
+
+.column, .columns {
+    position: relative;
+    padding-left: .9375em;
+    padding-right: .9375em;
 }
 
 article {
@@ -12,80 +40,7 @@ article {
   padding: 30px 0;
 }
 
-/* Header */
-
-header[role="banner"] {
-  background: white;
-  h1 {
-    color: $primary;
-    font-size: 2em;
-    line-height: 1.16667em;
-    margin: 1rem 0;
-  }
-
-  ul {
-    margin: 1rem 0;
-  }
-  a {
-    color: $secondary;
-    font-size: 2em;
-    padding: 0 10px;
-    text-decoration: none;
-    transition: all 1s ease-in-out;
-  }
-
-  nav {
-    float: right;
-    li {
-      display: inline-block;
-    }
-
-    a:hover {
-      color: $primary;
-      -webkit-transform: rotate(60deg);
-
-      i {
-        -webkit-transform: rotate(70deg);
-        transform: rotate(70deg);
-      }
-    }
-  }
-}
-
-#about, #exp, #home {
-  filter: grayscale(10%);
-
-  &:hover {
-    filter: grayscale(40%);
-  }
-}
-
-/* Section */
-#about {
-  background: url(../img/sublime.JPG) 50% 0 repeat fixed;
-  min-height: 300px;
-  background-size: cover;
-  height: auto;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1920px;
-  position: relative;
-
-  article {
-    text-align: left;
-  }
-
-  li {
-    color: #fff;
-    padding: 0.5em;
-  }
-
-  h2 {
-    text-align: left;
-    color: #fff;
-  }
-}
-
+/* Sections */
 #home {
   background: url(../img/banniere.png) 50% 0 repeat fixed;
   min-height: 300px;
@@ -96,13 +51,19 @@ header[role="banner"] {
   max-width: 1920px;
   position: relative;
 
+   filter: grayscale(10%);
+
+  &:hover {
+    filter: grayscale(40%);
+  }
+
   article {
     height: 200px;
     top: 150px;
   }
 }
 
-#exp {
+#divers {
   background: url(../img/ordi.jpg) 50% 0 no-repeat fixed;
   min-height: 300px;
   height: 300px;
@@ -113,54 +74,40 @@ header[role="banner"] {
   color: #fff;
 
   article {
-    height: 200px;
     text-align: center;
     top: 150px;
     color: #fff;
   }
 
-  i, h2 {
+  h2 {
      color: #fff;
    }
 }
 
-#divers {
-  background: url(../img/banniere.png) 50% 0 repeat-x fixed;
-  min-height: 150px;
-  height: 150px;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1920px;
-  position: relative;
-
-  article {
-    height: 200px;
-    text-align: center;
-    top: 150px;
-  }
+//Exp
+.exp-icon {
+  flex-basis: 33%;
+    
 }
 
+.exp-list {
+  flex-basis: 66%;
+    
+}
 
-#avatar {
-  display: block;
-  float: left;
-  background-size: 280px;
-  width: 200px;
-  height: 200px;
-  background-image: url(../img/lomo.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  border-radius: 100px;
-  margin-bottom: 20px;
+// Skills
+.skills {
+    flex-basis: 33%;
+    @include media("<=tablet") {
+        flex-basis: 100%;
+   }
 }
 
 /* Liste icone */
 .big_icons {
   text-align: center;
-
-  li {
-    cursor: pointer;
-  }
+  display : flex;
+  width: 100%;
 
   p {
     clear: both;
@@ -168,33 +115,18 @@ header[role="banner"] {
     margin-top: 20px;
   }
 
-  i {
+  a {
     width: 33%;
     height: 33%;
     font-size: 4em;
     text-align: center;
-    color: #b5b5b5;
+    color: white;
+    text-decoration: none;
+    cursor : pointer;
     transition: all 1s;
-  }
-
-  li:nth-child(2) span {
-    color: $secondary;
-  }
-
-  li:nth-child(3) span {
-    color: $secondary;
-  }
-
-}
-
-li.plus span {
-  background: none;
-  font-size: 4em;
-  padding: 0;
-  line-height: 2em;
-
-  &:hover {
-    background: none;
+    &:hover  {
+      color : $secondary
+    }
   }
 }
 
@@ -213,13 +145,13 @@ ul li ul li {
   margin: 0 auto;
   width: 150px;
   height: 150px;
+  line-height: 150px;
   font-size: 80px;
   color: #fff;
   text-align: center;
-  padding: 30px 0;
   display: block;
   background: $secondary;
-  border-radius: 100px;
+  border-radius: 50%;
 }
 
 .square {
@@ -244,9 +176,6 @@ ul li ul li {
 }
 
 @media only screen and (max-width: 768px) {
-  #btn_CV {
-    margin: 65px 0 0 30px;
-  }
 
   #home {
     background-size: 100%;
@@ -287,5 +216,14 @@ ul li ul li {
     margin: 10px auto;
     display: block;
     width: 70%;
+  }
+}
+
+.icons-grid {
+  display : flex;
+  i {
+    flex-basis: 25%;
+    font-size: 3rem;
+    color: $secondary
   }
 }
