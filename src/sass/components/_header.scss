@@ -1,0 +1,46 @@
+header[role="banner"] {
+  background: white;
+  h1 {
+    color: $primary;
+    font-size: 2em;
+    line-height: 1.16667em;
+    margin: 1rem 0;
+  }
+
+  a {
+    color: $secondary;
+    font-size: 2em;
+    padding: 0 10px;
+    text-decoration: none;
+    transition: all 1s ease-in-out;
+  }
+
+  nav {
+    li {
+      display: inline-block;
+    }
+
+    a:hover {
+      color: $primary;
+      -webkit-transform: rotate(60deg);
+
+      i {
+        -webkit-transform: rotate(70deg);
+        transform: rotate(70deg);
+      }
+    }
+  }
+}
+
+
+header {
+    article {
+        display : flex;
+        @include media(">phone", "<=tablet") {
+            flex-direction : column
+        }
+    }
+    nav {
+        margin-left : auto;
+    }
+}

@@ -16,6 +16,11 @@ h2 {
   font-size: 3em;
   text-transform: uppercase;
   text-align: center;
+  transition: all 1s; 
+
+  @include media("<=tablet") {
+      font-size: 2em;
+   }
 }
 h2 span {
   padding: 0.5em;
