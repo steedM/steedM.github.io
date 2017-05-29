@@ -578,11 +578,11 @@ button, .button {
   color: #fff;
   -webkit-appearance: none;
   border-radius: 4px 4px 4px;
-  box-shadow: 0 8px #106949;
+  box-shadow: 0 8px #1b8760;
   transition: background-color 300ms ease-out; }
   button:hover, .button:hover {
     top: 2px;
-    box-shadow: 0 6px #106949; }
+    box-shadow: 0 6px #1b8760; }
   button:focus, button:hover, .button:focus, .button:hover {
     background-color: #1b8760;
     color: #fff; }
@@ -646,9 +646,16 @@ header[role="banner"] {
       header[role="banner"] nav a:hover i {
         transform: rotate(70deg); }
 
+#about, #exp, #home {
+  -webkit-filter: grayscale(10%);
+          filter: grayscale(10%); }
+  #about:hover, #exp:hover, #home:hover {
+    -webkit-filter: grayscale(40%);
+            filter: grayscale(40%); }
+
 /* Section */
 #about {
-  background: url(../img/ordi.jpg) 50% 0 repeat fixed;
+  background: url(../img/sublime.JPG) 50% 0 repeat fixed;
   min-height: 300px;
   background-size: cover;
   height: auto;
@@ -666,7 +673,6 @@ header[role="banner"] {
     color: #fff; }
 
 #home {
-  background: url(../img/sublime.jpg) 50% 0 repeat fixed;
   background: url(../img/banniere.png) 50% 0 repeat fixed;
   min-height: 300px;
   background-size: 50%;
@@ -680,7 +686,7 @@ header[role="banner"] {
     top: 150px; }
 
 #exp {
-  background: url(../img/bg1.jpg) 50% 0 no-repeat fixed;
+  background: url(../img/ordi.jpg) 50% 0 no-repeat fixed;
   min-height: 300px;
   height: 300px;
   margin: 0 auto;
