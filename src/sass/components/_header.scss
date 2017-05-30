@@ -2,9 +2,14 @@ header[role="banner"] {
   background: white;
   h1 {
     color: $primary;
-    font-size: 2em;
-    line-height: 1.16667em;
-    margin: 1rem 0;
+    font-size: 2rem;
+    line-height: 1.5rem;
+    margin:0;
+    span {
+      font-size: 12px;
+      line-height: 12px;
+      font-family : 'OpenSansLightItalic';
+    }
   }
 
   a {
@@ -16,6 +21,7 @@ header[role="banner"] {
   }
 
   nav {
+     margin-left : auto;
     li {
       display: inline-block;
     }
@@ -30,17 +36,13 @@ header[role="banner"] {
       }
     }
   }
-}
 
-
-header {
-    article {
+  article {
         display : flex;
+        align-items: center;
+        padding: 1rem 0;
         @include media(">phone", "<=tablet") {
             flex-direction : column
         }
-    }
-    nav {
-        margin-left : auto;
     }
 }

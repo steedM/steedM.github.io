@@ -85,34 +85,39 @@ header[role="banner"] {
   background: white; }
   header[role="banner"] h1 {
     color: #656565;
-    font-size: 2em;
-    line-height: 1.16667em;
-    margin: 1rem 0; }
+    font-size: 2rem;
+    line-height: 1.5rem;
+    margin: 0; }
+    header[role="banner"] h1 span {
+      font-size: 12px;
+      line-height: 12px;
+      font-family: 'OpenSansLightItalic'; }
   header[role="banner"] a {
     color: #23b27e;
     font-size: 2em;
     padding: 0 10px;
     text-decoration: none;
     transition: all 1s ease-in-out; }
-  header[role="banner"] nav li {
-    display: inline-block; }
-  header[role="banner"] nav a:hover {
-    color: #656565;
-    -webkit-transform: rotate(60deg); }
-    header[role="banner"] nav a:hover i {
-      transform: rotate(70deg); }
-
-header article {
-  display: -ms-flexbox;
-  display: flex; }
+  header[role="banner"] nav {
+    margin-left: auto; }
+    header[role="banner"] nav li {
+      display: inline-block; }
+    header[role="banner"] nav a:hover {
+      color: #656565;
+      -webkit-transform: rotate(60deg); }
+      header[role="banner"] nav a:hover i {
+        transform: rotate(70deg); }
+  header[role="banner"] article {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    padding: 1rem 0; }
 
 @media (min-width: 321px) and (max-width: 768px) {
-  header article {
+  header[role="banner"] article {
     -ms-flex-direction: column;
         flex-direction: column; } }
-
-header nav {
-  margin-left: auto; }
 
 .hero-photo {
   text-align: center;
