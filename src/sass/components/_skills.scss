@@ -1,0 +1,6 @@
+.skills-column {
+    flex-basis: 33%;
+    @include media("<=tablet") {
+        flex-basis: 100%;
+   }
+}

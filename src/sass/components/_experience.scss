@@ -1,0 +1,26 @@
+//Exp
+.exp-icon {
+  flex-basis: 33%;
+    
+}
+
+.exp-list {
+  flex-basis: 66%;
+}
+
+.square {
+  padding: 0;
+}
+.square li {
+  padding: 5px 0;
+  line-height: 1.3em;
+  display: block;
+}
+.square li span {
+  font-size: 1.2em;
+  color: $primary;
+}
+.square li .points {
+  font-size: 50px;
+  margin-bottom: 40px;
+}

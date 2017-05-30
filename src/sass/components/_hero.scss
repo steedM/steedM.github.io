@@ -1,30 +1,4 @@
-
-.hero-photo {
-    text-align: center;
-    flex-basis: 33%;
-    @include media(">=tablet") {
-        display: flex;
-        flex-direction : column  
-    }
-}
-
-.hero-resume {
-    flex-basis: 66%;
-}
-
-#avatar {
-  display: block;
-  margin: 0 auto 20px;
-  background-size: 280px;
-  width: 200px;
-  height: 200px;
-  background-image: url(../img/lomo.jpg);
-  background-repeat: no-repeat;
-  background-position: 75% 50%;
-  border-radius: 50%;
-}
-
-#about {
+.hero {
   //background: url(../img/sublime.JPG) 50% 0 repeat fixed;
   background: 
   linear-gradient(135deg, #111111 40%, transparent 25%) -50px 0,
@@ -61,8 +35,43 @@
     text-align: left;
     color: #fff;
   }
+}
 
-   @include media( "<=tablet") {
-      //background: $primary ;
-   }
+.hero-photo {
+    text-align: center;
+    flex-basis: 33%;
+    @include media(">=tablet") {
+        display: flex;
+        flex-direction : column  
+    }
+}
+
+.hero-resume {
+    flex-basis: 66%;
+}
+
+#avatar {
+  display: block;
+  margin: 0 auto 20px;
+  background-size: 280px;
+  width: 200px;
+  height: 200px;
+  background-image: url(../img/lomo.jpg);
+  background-repeat: no-repeat;
+  background-position: 75% 50%;
+  border-radius: 50%;
+}
+
+
+@media only screen and (max-width: 470px) {
+  #avatar {
+    margin: 0 auto;
+    float: none;
+  }
+
+  #btn_CV {
+    margin: 10px auto;
+    display: block;
+    width: 70%;
+  }
 }

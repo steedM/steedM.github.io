@@ -4,6 +4,9 @@
 @import "components/buttons";
 @import "components/header";
 @import "components/hero";
+@import "components/portfolio";
+@import "components/experience";
+@import "components/divers";
 
 body {
   background: #fff;
@@ -30,9 +33,9 @@ body {
 }
 
 .column, .columns {
-    position: relative;
-    padding-left: .9375em;
-    padding-right: .9375em;
+  position: relative;
+  padding-left: .9375em;
+  padding-right: .9375em;
 }
 
 article {
@@ -40,79 +43,6 @@ article {
   padding: 30px 0;
 }
 
-/* Sections */
-#home {
-  background: url(../img/banniere.png) 50% 0 repeat fixed;
-  min-height: 300px;
-  background-size: 50%;
-  height: 300px;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1920px;
-  position: relative;
-  transition: background-size 1s;
-
-  &:hover {
-    background-size: 65%;
-  }
-
-  article {
-    height: 200px;
-    top: 150px;
-  }
-}
-
-#divers {
- background:
-  linear-gradient(135deg, #111111 40%, transparent 25%) -50px 0,
-  linear-gradient(225deg, #222222 40%, transparent 25%) -50px 0,
-  linear-gradient(315deg, #111111 25%, transparent 25%),
-  linear-gradient(45deg, #222222 25%, transparent 25%);	
-  background-size: 200% 100%;
-  background-attachment: fixed;
-  background-color: #000;
-  min-height: 300px;
-  height: 300px;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1920px;
-  position: relative;
-  color: #fff;
-  transition: background-color 1s;
-
-  &:hover {
-    background-color : darken($secondary, 30%);
-  }
-
-  article {
-    text-align: center;
-    top: 150px;
-    color: #fff;
-  }
-
-  h2 {
-     color: #fff;
-   }
-}
-
-//Exp
-.exp-icon {
-  flex-basis: 33%;
-    
-}
-
-.exp-list {
-  flex-basis: 66%;
-    
-}
-
-// Skills
-.skills {
-    flex-basis: 33%;
-    @include media("<=tablet") {
-        flex-basis: 100%;
-   }
-}
 
 /* Liste icone */
 .big_icons {
@@ -165,69 +95,8 @@ ul li ul li {
   border-radius: 50%;
 }
 
-.square {
-  padding: 0;
-}
-.square li {
-  padding: 5px 0;
-  line-height: 1.3em;
-  display: block;
-}
-.square li span {
-  font-size: 1.2em;
-  color: $primary;
-}
-.square li .points {
-  font-size: 50px;
-  margin-bottom: 40px;
-}
-
 .lighter {
   background: #f1f1f2;
-}
-
-@media only screen and (max-width: 768px) {
-
-  #home {
-    background-size: 100%;
-  }
-
-  #title {
-    width: 100%;
-    text-align: center;
-    margin: 0;
-  }
-
-  #social {
-    position: relative;
-    width: 100%;
-  }
-
-  #social ul {
-    text-align: center;
-    margin: 10px 0;
-    padding: 0;
-  }
-
-  #social li {
-    display: inline-block;
-  }
-
-  #social li a, #social li a i {
-    font-size: 1.2em;
-  }
-}
-@media only screen and (max-width: 470px) {
-  #avatar {
-    margin: 0 auto;
-    float: none;
-  }
-
-  #btn_CV {
-    margin: 10px auto;
-    display: block;
-    width: 70%;
-  }
 }
 
 .icons-grid {

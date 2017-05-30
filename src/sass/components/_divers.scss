@@ -1,0 +1,32 @@
+.divers {
+ background:
+  linear-gradient(135deg, #111111 40%, transparent 25%) -50px 0,
+  linear-gradient(225deg, #222222 40%, transparent 25%) -50px 0,
+  linear-gradient(315deg, #111111 25%, transparent 25%),
+  linear-gradient(45deg, #222222 25%, transparent 25%);	
+  background-size: 200% 100%;
+  background-attachment: fixed;
+  background-color: #000;
+  min-height: 300px;
+  height: 300px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  color: #fff;
+  transition: background-color 1s;
+
+  &:hover {
+    background-color : darken($secondary, 30%);
+  }
+
+  article {
+    text-align: center;
+    top: 150px;
+    color: #fff;
+  }
+
+  h2 {
+     color: #fff;
+   }
+}

@@ -1,0 +1,27 @@
+.portfolio {
+  background: url(../img/banniere.png) 50% 0 repeat fixed;
+  min-height: 300px;
+  background-size: 50%;
+  height: 300px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  transition: background-size 1s;
+
+  &:hover {
+    background-size: 55%;
+  }
+
+  article {
+    height: 200px;
+    top: 150px;
+   } 
+
+   @include media("<=tablet") {
+        background-size: 100%;
+        &:hover {
+            background-size: 105%;
+        }
+    }
+}
