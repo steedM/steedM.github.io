@@ -146,14 +146,20 @@ header[role="banner"] {
   border-radius: 50%; }
 
 #about {
-  background: url(../img/sublime.JPG) 50% 0 repeat fixed;
+  background: linear-gradient(135deg, #111111 40%, transparent 25%) -50px 0, linear-gradient(225deg, #222222 40%, transparent 25%) -50px 0, linear-gradient(315deg, #111111 25%, transparent 25%), linear-gradient(45deg, #222222 25%, transparent 25%);
+  background-size: 200% 100%;
+  background-attachment: fixed;
+  background-color: #000;
   min-height: 300px;
   background-size: cover;
   height: auto;
   margin: 0 auto;
   width: 100%;
   max-width: 1920px;
-  position: relative; }
+  position: relative;
+  transition: background-color 1s; }
+  #about:hover {
+    background-color: #0a3223; }
   #about article {
     text-align: left; }
   #about li {
@@ -162,9 +168,6 @@ header[role="banner"] {
   #about h2 {
     text-align: left;
     color: #fff; }
-  @media (max-width: 768px) {
-    #about {
-      background: #656565; } }
 
 body {
   background: #fff;
@@ -210,24 +213,28 @@ article {
   width: 100%;
   max-width: 1920px;
   position: relative;
-  -webkit-filter: grayscale(10%);
-          filter: grayscale(10%); }
+  transition: background-size 1s; }
   #home:hover {
-    -webkit-filter: grayscale(40%);
-            filter: grayscale(40%); }
+    background-size: 65%; }
   #home article {
     height: 200px;
     top: 150px; }
 
 #divers {
-  background: url(../img/ordi.jpg) 50% 0 no-repeat fixed;
+  background: linear-gradient(135deg, #111111 40%, transparent 25%) -50px 0, linear-gradient(225deg, #222222 40%, transparent 25%) -50px 0, linear-gradient(315deg, #111111 25%, transparent 25%), linear-gradient(45deg, #222222 25%, transparent 25%);
+  background-size: 200% 100%;
+  background-attachment: fixed;
+  background-color: #000;
   min-height: 300px;
   height: 300px;
   margin: 0 auto;
   width: 100%;
   max-width: 1920px;
   position: relative;
-  color: #fff; }
+  color: #fff;
+  transition: background-color 1s; }
+  #divers:hover {
+    background-color: #0a3223; }
   #divers article {
     text-align: center;
     top: 150px;
